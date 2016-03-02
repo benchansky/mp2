@@ -40,10 +40,10 @@ $(window).scroll(function() {
 	var scroll=$(window).scrollTop();
     if (scroll >= 50) {
         $('#logo-image').attr('src', './media/logo2.png')
-        $(".important-class").addClass("padding-on-my-header");
+        $(".title-bar").addClass("padding-on-my-header");
     }
     if (scroll < 50) {
-        $(".important-class").removeClass("padding-on-my-header");
+        $(".title-bar").removeClass("padding-on-my-header");
         $('#logo-image').attr('src', './media/logo1.png')
     }
 });
