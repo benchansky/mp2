@@ -1,6 +1,15 @@
 // Write any custom javascript functions here
 $(document).ready(function(){
 
+/*
+one_list=$("#n_list_one");
+one= new Foundation.Magellan(one_list, data-bar-offset);
+two_list=$("#drop2");
+two= new Foundation.Magellan(two_list);
+
+*/
+
+
   $("#owl-demo").owlCarousel({
  
       navigation : true, // Show next and prev buttons
@@ -8,31 +17,10 @@ $(document).ready(function(){
       paginationSpeed : 400,
       singleItem:true,
 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
  
   });
 
-   $('.menu-text a').on('click', function(e) {
-   	e.preventDefault();
-   	var target = $(this.hash);
-   	//console.log(target);
-   	//$(target).smoothScroll();
-	$('html,body').animate({
-		scrollTop:target.offset().top-76
-	}, 1000);
-
-   	/*
-    $.smoothScroll({
-      scrollElement: $('div.scrollme'),
-      scrollTarget: target
-    }); */
-    return false;
-  });
+   
 
 //nav bar controls:
 $(window).scroll(function() {
