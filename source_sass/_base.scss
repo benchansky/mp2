@@ -8,7 +8,7 @@ min-height: 90%;
 	-webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: cover;
-    background-color:#3c78d8;
+    background-color:$main_blue;
 	}
 
 
@@ -26,10 +26,10 @@ min-height: 90%;
 
 
 h1{
-	color:#3c78d8;
+	color:$main_blue;
 }
 p{
-	color:#3c78d8;
+	color:$main_blue;
 }
 
 
@@ -39,7 +39,7 @@ p{
 
 .blue {
 	width:100%;
-	background-color:#3c78d8;
+	background-color:$main_blue;
 
 	p{
 		color:white;
@@ -50,7 +50,7 @@ p{
 	}
 
 	.trickyP{
-		color:#3c78d8;
+		color:$main_blue;
 		background-color:#fff;
 	}
 
@@ -58,7 +58,7 @@ p{
 
 .button {
 background-color: white;
-color:#3c78d8;
+color:$main_blue;
 }
 
 .row {
@@ -68,8 +68,7 @@ color:#3c78d8;
 
 #owl-demo .item img{
     display: block;
-    width: 100%;
-    height: auto;
+     @include size(100%);
 }
 
 
@@ -97,7 +96,7 @@ color:#3c78d8;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   overflow:hidden;
-  color:#3c78d8;
+  color:$main_blue;
   margin-bottom: 1em;
 }
 @keyframes slidein {
