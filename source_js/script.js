@@ -19,7 +19,6 @@ $(document).ready(function(){
 
    $('.menu-text a').on('click', function(e) {
    	e.preventDefault();
-   	console.log("shippar3");
    	var target = $(this.hash);
    	//console.log(target);
    	//$(target).smoothScroll();
@@ -50,7 +49,6 @@ $(window).scroll(function() {
 
 $('#menue_btn').on('click', function(e) {
    	e.preventDefault();
-   	console.log("hellooo");
    	var target = $(this.hash);
    	//console.log(target);
    	//$(target).smoothScroll();
